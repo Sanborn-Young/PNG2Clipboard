@@ -1,16 +1,19 @@
 
-This is a quick and dirty utility mainly for Obsidian but should work on other .md files.
+This is a quick and dirty utility mainly for Obsidian but should work on other .md files.  Because I'll most likely never touch this again, the executable is attached, and will not be put on a release.  If you download the binary, it should be completely self contained, and has no ability to config the file.
+
 ![ProgramIcon](./README_display/Icon.webp)
 
-It will take and covert your last clip from Win11 Screenshots and put it on your clipboard to paste into Obsidian directly as an embedded webp filel
 
-If you run it, it looks in %CurrentUser%\Screenshots for latest png files, turns it into webp 1080 @ 20 and then transfer this to your clipboard.  You can then paste the string directly into Obsidian.
+If you run the program, it will looks in %CurrentUser%\OneDrive\Pictures\Screenshots for latest png files, turns it into webp 1080 @ 20 and then transfer this to your clipboard.  You can then paste the string directly into Obsidian.
 
-_It assumes you've hooked up on onedrive, and actual looks in USERPROFILE\OneDrive\Pictures\Snapshots
+If not clear, you need to have your PC with a standard load and be using OneDrive.  If this doesn't fit, you'll need to download and compile the program again.  It also assumes you've done nothing to the Windows Snipping tool, which places a .png file into your Screenshot folder after every snip of the screen.
+
+After running the program, you will get the following dialog box and it will immediately look for the newest .png file in your screenshot folder.  It turn this into a webp data stream with the appropriate header so that you can past the image into a markdown note.  I chose wepb for a very smaller size.
+
+If you take another screenshot, you will need to hit the repeat button on the dialog box to process the new slide.
 
 ![ProgramIcon](./README_display/Dialog.webp)
 
-The buffer goes away if you copy something else into the buffer, but the program puts up a dialog box to refresh.  
+Remember that the clipbox gets overwritten if you copy something else into the buffer, but you can always hit the refresh button to grab the latest screenshot shot out of the screenshot folder.
 
-So, take another snip with the snipping tool, then hit the repeat button.
-
+If you want more control but a slower process, look at PNG2MD on this same github.
