@@ -12,7 +12,7 @@ If you run the program, it will looks in %CurrentUser%\OneDrive\Pictures\Screens
 
 If not clear, you need to have your PC with a standard load and be using OneDrive.  If this doesn't fit, you'll need to download and compile the program again.  It also assumes you've done nothing to the Windows Snipping tool, which places a .png file into your Screenshot folder after every snip of the screen.
 
-After running the program, you will get the following dialog box and it will immediately look for the newest .png file in your screenshot folder.  It turn this into a webp data stream with the appropriate header so that you can past the image into a markdown note.  I chose wepb for a very smaller size.
+After running the program, you will get the following dialog box below.  When first run the program finds the newest .png file in your screenshot folder.  It turns this png file into a b64 data stream (ASCII UTF-8), pads it with the right front and end, so you paste it into your Obsidian note or any other note as an embedded graphic.
 
 If you take another screenshot, you will need to hit the repeat button on the dialog box to process the new slide.
 
