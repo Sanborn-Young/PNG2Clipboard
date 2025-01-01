@@ -1,4 +1,8 @@
+## Give It To Me Now
 
+The binary is called PNG2Clipboard.exe and is in the dist folder.  Click on the folder and the program and download to use.
+
+## Details
 This is a quick and dirty utility mainly for Obsidian but should work on other .md files.  Because I'll most likely never touch this again, the executable is attached, and will not be put on a release.  If you download the binary, it should be completely self contained, and has no ability to config the file.
 
 ![ProgramIcon](./README_display/Icon.webp)
